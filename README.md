@@ -21,7 +21,7 @@ Vib-OS v0.5.0 - ARM64 with Full GUI
 
 ## Overview
 
-Vib-OS is a from-scratch, Unix-like operating system for ARM64 architectures. It features a custom kernel, a modern macOS-inspired graphical user interface, a full TCP/IP networking stack, and a Virtual File System (VFS). Built with **18,000+ lines** of C and Assembly, it runs natively on QEMU, Apple Silicon (via UTM), and Raspberry Pi 4/5.
+Vib-OS is a from-scratch operating system for ARM64 architectures with a **POSIX-style syscall surface (subset)**: it exposes read/write/openat/close/lseek/brk/mmap/uname and other familiar entry points, but does not yet implement fork/clone, wait, pipe, or argv/envp passing, so it is not Unix-like in semantics yet. It features a custom kernel, a modern macOS-inspired graphical user interface, a full TCP/IP networking stack, and a Virtual File System (VFS). Built with **18,000+ lines** of C and Assembly, it runs natively on QEMU, Apple Silicon (via UTM), and Raspberry Pi 4/5.
 
 ## 📸 Screenshots
 
